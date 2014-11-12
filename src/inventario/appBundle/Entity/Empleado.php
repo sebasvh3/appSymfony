@@ -52,14 +52,14 @@ class Empleado
     /**
      * @var integer
      *
-     * @ORM\Column(name="Bonificacion", type="bigint")
+     * @ORM\Column(name="Bonificacion", type="integer")
      */
     private $bonificacion;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="Sueldo", type="bigint")
+     * @ORM\Column(name="Sueldo", type="integer")
      */
     private $sueldo;
 
