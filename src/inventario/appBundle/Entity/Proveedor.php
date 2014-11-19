@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class Cliente
+class Proveedor
 {
     /**
      * @var integer
@@ -52,9 +52,23 @@ class Cliente
     /**
      * @var string
      *
-     * @ORM\Column(name="afiliado", type="string", length=2)
+     * @ORM\Column(name="garantia", type="integer")
      */
-    private $afiliado;
-
+    private $garantia;
     
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tiempoEntrega", type="integer")
+     */
+    private $tiempoEntrega;
+
+        
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="precio", type="integer")
+     */
+    private $precio;
+   
 }
