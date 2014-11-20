@@ -153,4 +153,8 @@ class Producto
     {
         return $this->idproveedor;
     }
+    
+    public function __toString() {
+        return $this->getNombre();
+    }
 }

@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Inventario</h1>
+
+    <table class="table table-bordered table-hover table-condensed ">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr >
+                <td><a href="{{ path('inventario_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.cantidad }}</td>
+                <td class="text-center">
+                   <a title="Editar" href="{{ path('inventario_show', { 'id': entity.id }) }}">
+                        <i class="fa fa-eye fa-2x linkDecoNone"></i>
+                   </a>
+                   <a href="{{ path('inventario_edit', { 'id': entity.id }) }}">
+                       <i class="fa fa-pencil-square-o fa-2x  linkDecoNone"></i>
+                   </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('inventario_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}
