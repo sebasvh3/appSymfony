@@ -1,0 +1,13 @@
+.linkEditar {
+    cursor:default;
+}
+
+.linkDecoNone {
+    text-decoration:none;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}

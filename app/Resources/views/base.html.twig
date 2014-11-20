@@ -5,9 +5,43 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/font-awesome/css/font-awesome.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/css/estilos.css') }}" />
+        
+        
+        <script type="text/javascript" src="{{ asset('bundles/app/jquery/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/app/bootstrap/js/bootstrap.js') }}"></script>
+        
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div style="width: 80%; margin:auto">
+            
+
+            <br>
+            <ul class="nav nav-tabs" id="navPrincipal">
+                <li id="inicio" class="active"><a href="#">Inicio</a></li>
+                <li id="producto"><a href="#">Compras</a></li>
+                <li id="categoria"><a href="#">Ventas</a></li>
+                
+                
+                <li class="dropdown ">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Mantenimientos <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li id="entrada"><a href="{{path('transaccion')}}">Transacciones</a></li>
+                        <li id="entrada"><a href="{{path('proveedor')}}">Proveedores</a></li>
+                 
+                    </ul>
+                </li>
+            </ul>
+            
+
+            <br>
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

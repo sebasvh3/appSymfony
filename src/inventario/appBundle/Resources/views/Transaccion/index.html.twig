@@ -1,14 +1,14 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Transaccion list</h1>
+<h3>Lista Transacciones</h3><br>
 
-    <table class="records_list">
+    <table class="table table-bordered table-hover table-condensed linkEditar">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Descripcion</th>
-                <th>Actions</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -16,26 +16,20 @@
             <tr>
                 <td><a href="{{ path('transaccion_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.descripcion }}</td>
-                <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('transaccion_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('transaccion_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+                <td class="text-center">
+                       <a title="Editar" href="{{ path('transaccion_show', { 'id': entity.id }) }}">
+                            <i class="fa fa-eye fa-2x linkDecoNone"></i>
+                       </a>
+                       <a href="{{ path('transaccion_edit', { 'id': entity.id }) }}">
+                           <i class="fa fa-pencil-square-o fa-2x  linkDecoNone"></i>
+                       </a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('transaccion_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
+    <a title="Nuevo" class="btn btn-default btn-sm" href="{{ path('transaccion_new') }}">
+    <i class="fa fa-file-o"></i>&nbsp; Nuevo</a>
+
     {% endblock %}
