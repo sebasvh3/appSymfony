@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Proveedores</h1>
+    <h1>Clientes</h1>
 
     <table class="table table-bordered table-hover table-condensed ">
         <thead>
@@ -11,28 +11,24 @@
                 <th>Apellido</th>
                 <th>Telefono</th>
                 <th>Direccion</th>
-                <th>Garantia</th>
-                <th>Tiempoentrega</th>
-                <th>Precio</th>
+                <th>Afiliado</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('proveedor_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td><a href="{{ path('cliente_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.nombre }}</td>
                 <td>{{ entity.apellido }}</td>
                 <td>{{ entity.telefono }}</td>
                 <td>{{ entity.direccion }}</td>
-                <td>{{ entity.garantia }}</td>
-                <td>{{ entity.tiempoEntrega }}</td>
-                <td>{{ entity.precio }}</td>
+                <td>{{ entity.afiliado }}</td>
                 <td class="text-center">
-                     <a title="Editar" href="{{ path('proveedor_show', { 'id': entity.id }) }}">
+                    <a title="Editar" href="{{ path('cliente_show', { 'id': entity.id }) }}">
                             <i class="fa fa-eye fa-2x linkDecoNone"></i>
                        </a>
-                       <a href="{{ path('proveedor_edit', { 'id': entity.id }) }}">
+                       <a href="{{ path('cliente_edit', { 'id': entity.id }) }}">
                            <i class="fa fa-pencil-square-o fa-2x  linkDecoNone"></i>
                        </a>
                 </td>
@@ -42,7 +38,6 @@
     </table>
 
     
-    <a title="Nuevo" class="btn btn-default btn-sm" href="{{ path('proveedor_new') }}">
+     <a title="Nuevo" class="btn btn-default btn-sm" href="{{ path('cliente_new') }}">
     <i class="fa fa-file-o"></i>&nbsp; Nuevo</a>
-    
     {% endblock %}

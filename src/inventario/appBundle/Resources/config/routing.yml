@@ -1,3 +1,7 @@
+app_cliente:
+    resource: "@appBundle/Resources/config/routing/cliente.yml"
+    prefix:   /cliente
+
 app_proveedor:
     resource: "@appBundle/Resources/config/routing/proveedor.yml"
     prefix:   /proveedor
