@@ -71,4 +71,175 @@ class Proveedor
      */
     private $precio;
    
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return Proveedor
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set apellido
+     *
+     * @param string $apellido
+     * @return Proveedor
+     */
+    public function setApellido($apellido)
+    {
+        $this->apellido = $apellido;
+
+        return $this;
+    }
+
+    /**
+     * Get apellido
+     *
+     * @return string 
+     */
+    public function getApellido()
+    {
+        return $this->apellido;
+    }
+
+    /**
+     * Set telefono
+     *
+     * @param string $telefono
+     * @return Proveedor
+     */
+    public function setTelefono($telefono)
+    {
+        $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    /**
+     * Get telefono
+     *
+     * @return string 
+     */
+    public function getTelefono()
+    {
+        return $this->telefono;
+    }
+
+    /**
+     * Set direccion
+     *
+     * @param string $direccion
+     * @return Proveedor
+     */
+    public function setDireccion($direccion)
+    {
+        $this->direccion = $direccion;
+
+        return $this;
+    }
+
+    /**
+     * Get direccion
+     *
+     * @return string 
+     */
+    public function getDireccion()
+    {
+        return $this->direccion;
+    }
+
+    /**
+     * Set garantia
+     *
+     * @param integer $garantia
+     * @return Proveedor
+     */
+    public function setGarantia($garantia)
+    {
+        $this->garantia = $garantia;
+
+        return $this;
+    }
+
+    /**
+     * Get garantia
+     *
+     * @return integer 
+     */
+    public function getGarantia()
+    {
+        return $this->garantia;
+    }
+
+    /**
+     * Set tiempoEntrega
+     *
+     * @param integer $tiempoEntrega
+     * @return Proveedor
+     */
+    public function setTiempoEntrega($tiempoEntrega)
+    {
+        $this->tiempoEntrega = $tiempoEntrega;
+
+        return $this;
+    }
+
+    /**
+     * Get tiempoEntrega
+     *
+     * @return integer 
+     */
+    public function getTiempoEntrega()
+    {
+        return $this->tiempoEntrega;
+    }
+
+    /**
+     * Set precio
+     *
+     * @param integer $precio
+     * @return Proveedor
+     */
+    public function setPrecio($precio)
+    {
+        $this->precio = $precio;
+
+        return $this;
+    }
+
+    /**
+     * Get precio
+     *
+     * @return integer 
+     */
+    public function getPrecio()
+    {
+        return $this->precio;
+    }
 }

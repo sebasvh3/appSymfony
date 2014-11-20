@@ -1,3 +1,7 @@
+app_transaccion:
+    resource: "@appBundle/Resources/config/routing/transaccion.yml"
+    prefix:   /transaccion
+
 app_homepage:
     path:     /hello/{name}
     defaults: { _controller: appBundle:Default:index }

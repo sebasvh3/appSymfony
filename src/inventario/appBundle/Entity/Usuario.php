@@ -65,4 +65,152 @@ class Usuario
 
 
     
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return Usuario
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set apellido
+     *
+     * @param string $apellido
+     * @return Usuario
+     */
+    public function setApellido($apellido)
+    {
+        $this->apellido = $apellido;
+
+        return $this;
+    }
+
+    /**
+     * Get apellido
+     *
+     * @return string 
+     */
+    public function getApellido()
+    {
+        return $this->apellido;
+    }
+
+    /**
+     * Set telefono
+     *
+     * @param string $telefono
+     * @return Usuario
+     */
+    public function setTelefono($telefono)
+    {
+        $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    /**
+     * Get telefono
+     *
+     * @return string 
+     */
+    public function getTelefono()
+    {
+        return $this->telefono;
+    }
+
+    /**
+     * Set direccion
+     *
+     * @param string $direccion
+     * @return Usuario
+     */
+    public function setDireccion($direccion)
+    {
+        $this->direccion = $direccion;
+
+        return $this;
+    }
+
+    /**
+     * Get direccion
+     *
+     * @return string 
+     */
+    public function getDireccion()
+    {
+        return $this->direccion;
+    }
+
+    /**
+     * Set bonificacion
+     *
+     * @param integer $bonificacion
+     * @return Usuario
+     */
+    public function setBonificacion($bonificacion)
+    {
+        $this->bonificacion = $bonificacion;
+
+        return $this;
+    }
+
+    /**
+     * Get bonificacion
+     *
+     * @return integer 
+     */
+    public function getBonificacion()
+    {
+        return $this->bonificacion;
+    }
+
+    /**
+     * Set sueldo
+     *
+     * @param integer $sueldo
+     * @return Usuario
+     */
+    public function setSueldo($sueldo)
+    {
+        $this->sueldo = $sueldo;
+
+        return $this;
+    }
+
+    /**
+     * Get sueldo
+     *
+     * @return integer 
+     */
+    public function getSueldo()
+    {
+        return $this->sueldo;
+    }
 }

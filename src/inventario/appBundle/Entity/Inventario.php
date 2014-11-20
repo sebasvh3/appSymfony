@@ -35,4 +35,60 @@ class Inventario
     private $cantidad;
 
     
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set cantidad
+     *
+     * @param string $cantidad
+     * @return Inventario
+     */
+    public function setCantidad($cantidad)
+    {
+        $this->cantidad = $cantidad;
+
+        return $this;
+    }
+
+    /**
+     * Get cantidad
+     *
+     * @return string 
+     */
+    public function getCantidad()
+    {
+        return $this->cantidad;
+    }
+
+    /**
+     * Set idproducto
+     *
+     * @param \inventario\appBundle\Entity\Producto $idproducto
+     * @return Inventario
+     */
+    public function setIdproducto(\inventario\appBundle\Entity\Producto $idproducto = null)
+    {
+        $this->idproducto = $idproducto;
+
+        return $this;
+    }
+
+    /**
+     * Get idproducto
+     *
+     * @return \inventario\appBundle\Entity\Producto 
+     */
+    public function getIdproducto()
+    {
+        return $this->idproducto;
+    }
 }

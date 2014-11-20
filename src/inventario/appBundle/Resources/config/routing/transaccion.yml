@@ -1,0 +1,30 @@
+transaccion:
+    path:     /
+    defaults: { _controller: "appBundle:Transaccion:index" }
+
+transaccion_show:
+    path:     /{id}/show
+    defaults: { _controller: "appBundle:Transaccion:show" }
+
+transaccion_new:
+    path:     /new
+    defaults: { _controller: "appBundle:Transaccion:new" }
+
+transaccion_create:
+    path:     /create
+    defaults: { _controller: "appBundle:Transaccion:create" }
+    requirements: { _method: post }
+
+transaccion_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "appBundle:Transaccion:edit" }
+
+transaccion_update:
+    path:     /{id}/update
+    defaults: { _controller: "appBundle:Transaccion:update" }
+    requirements: { _method: post|put }
+
+transaccion_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "appBundle:Transaccion:delete" }
+    requirements: { _method: post|delete }

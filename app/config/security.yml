@@ -44,6 +44,16 @@ security:
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
+            
+#        app:
+#            pattern:  ^/app
+#            provider: usuarios
+#    
+#    providers:
+#        usuarios:
+#            entity: {class: inventario\appBundle\Entity\Usuario,property: login }
+
+           
 
     # with these settings you can restrict or allow access for different parts
     # of your application based on roles, ip, host or methods
